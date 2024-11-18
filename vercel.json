@@ -4,13 +4,11 @@
       "runtime": "python3.9"
     }
   },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/server.py"
-    }
-  ],
   "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/server.py"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
